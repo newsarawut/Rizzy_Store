@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <>
       <Image
-        src="/banner.png"
+        src="/banner.jpeg"
         alt="banner"
         width={2000}
         height={1000}
