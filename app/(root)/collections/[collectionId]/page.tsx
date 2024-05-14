@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 
 const CollectionDetails = async ({
-  params
+  params,
 }: {
   params: { collectionId: string };
 }) => {

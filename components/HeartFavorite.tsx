@@ -11,7 +11,7 @@ interface HeartFavoriteProps {
 }
 
 const HeartFavorite = ({ product, updateSignedInUser }: HeartFavoriteProps) => {
-   const router = useRouter();
+  const router = useRouter();
   const { user } = useUser();
 
   const [loading, setLoading] = useState(false);
@@ -44,7 +44,6 @@ const HeartFavorite = ({ product, updateSignedInUser }: HeartFavoriteProps) => {
         router.push("/sign-in");
         return;
       } else {
-        setLoading(true);
         const res = await fetch("/api/users/wishlist", {
           method: "POST",
           body: JSON.stringify({ productId: product._id }),

@@ -16,7 +16,7 @@ const Cart = () => {
     (acc, cartItem) => acc + cartItem.item.price * cartItem.quantity,
     0
   );
-  const totalRounded = Math.round(total * 100) / 100;
+  const totalRounded = parseFloat(total.toFixed(2));
 
   const customer = {
     clerkId: user?.id,

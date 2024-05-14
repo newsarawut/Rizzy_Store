@@ -83,7 +83,7 @@ const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
           />
           <p className="text-body-bold">{quantity}</p>
           <PlusCircle
-            className="hover:text-green-400 cursor-pointer"
+            className="hover:text-red-1 cursor-pointer"
             onClick={() => setQuantity(quantity + 1)}
           />
         </div>
@@ -91,14 +91,14 @@ const ProductInfo = ({ productInfo }: { productInfo: ProductType }) => {
 
       <button
         className="outline text-base-bold py-3 rounded-lg hover:bg-black hover:text-white"
-        onClick={() =>
+        onClick={() => {
           cart.addItem({
             item: productInfo,
             quantity,
             color: selectedColor,
             size: selectedSize,
-          })
-        }
+          });
+        }}
       >
         Add To Cart
       </button>
