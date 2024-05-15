@@ -10,16 +10,16 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^4.29.7",
-    "@stripe/stripe-js": "^3.4.0",
-    "lucide-react": "^0.378.0",
-    "mongoose": "^8.3.4",
+    "@stripe/stripe-js": "^3.0.6",
+    "lucide-react": "^0.341.0",
+    "mongoose": "^8.2.0",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-hot-toast": "^2.4.1",
-    "stripe": "^15.6.0",
+    "stripe": "^14.18.0",
     "tailwind-scrollbar-hide": "^1.1.7",
-    "zustand": "^4.5.2"
+    "zustand": "^4.5.1"
   },
   "devDependencies": {
     "@types/node": "^20",
